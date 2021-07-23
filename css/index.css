@@ -1,0 +1,112 @@
+.flex {
+  border: 1px solid black;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 500px 1fr;
+      grid-template-columns: 1fr 500px 1fr;
+  -ms-grid-rows: 100px 200px;
+      grid-template-rows: 100px 200px;
+  place-items: center;
+}
+
+article {
+  width: clamp(200px, 50%, 600px);
+}
+
+/*@media only screen and (max-width: 600px) {
+    article {
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    article {
+        width: 800px;
+    }
+}*/
+video {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+:root {
+  --text-color: rgb(255, 0, 0);
+}
+
+p {
+  --text-color: green;
+  color: var(--text-color);
+}
+
+.drop {
+  -webkit-animation: dropIn 1s ease forwards;
+          animation: dropIn 1s ease forwards;
+}
+
+@-webkit-keyframes dropIn {
+  from {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes dropIn {
+  from {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.ace {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+/*# sourceMappingURL=index.css.map */
