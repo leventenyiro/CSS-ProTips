@@ -82,3 +82,16 @@ p {
 .ace {
     animation-delay: 100ms;
 }
+
+// state counter
+:root {
+    counter-reset: headings;
+}
+
+h1 {
+    counter-increment: headings;
+}
+
+h1::before {
+    content: counter(headings)
+}
