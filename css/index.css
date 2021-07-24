@@ -81,6 +81,8 @@ p {
 .drop {
   -webkit-animation: dropIn 1s ease forwards;
           animation: dropIn 1s ease forwards;
+  -webkit-animation-delay: calc(var(--order) * 100ms);
+          animation-delay: calc(var(--order) * 100ms);
 }
 
 @-webkit-keyframes dropIn {

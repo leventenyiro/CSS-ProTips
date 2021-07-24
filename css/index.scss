@@ -66,6 +66,7 @@ p {
 // fancy calculations
 .drop {
     animation: dropIn 1s ease forwards;
+    animation-delay: calc(var(--order) * 100ms);
 }
 
 @keyframes dropIn {
